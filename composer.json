@@ -1,0 +1,58 @@
+{
+    "name": "carllee1983/ecpay-core",
+    "description": "綠界科技 ECPay SDK 共用核心套件",
+    "keywords": [
+        "ecpay",
+        "taiwan",
+        "sdk",
+        "core"
+    ],
+    "homepage": "https://github.com/CarlLee1983/ecpay-core",
+    "support": {
+        "issues": "https://github.com/CarlLee1983/ecpay-core/issues",
+        "source": "https://github.com/CarlLee1983/ecpay-core"
+    },
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Carl",
+            "email": "carllee0520@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "CarlLee\\EcPay\\Core\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CarlLee\\EcPay\\Core\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": "^8.3",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.23",
+        "mockery/mockery": "^1.6",
+        "orchestra/testbench": "^8.0 || ^9.0",
+        "phpunit/phpunit": "^10.5",
+        "squizlabs/php_codesniffer": "^4.0"
+    },
+    "scripts": {
+        "test": "phpunit",
+        "phpcs": "phpcs",
+        "phpcbf": "phpcbf"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CarlLee\\EcPay\\Core\\Laravel\\CoreServiceProvider"
+            ]
+        }
+    }
+}
+

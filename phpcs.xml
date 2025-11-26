@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<ruleset name="ECPay Core Coding Standard">
+    <description>ECPay Core 套件程式碼規範</description>
+
+    <!-- 檢查的目錄 -->
+    <file>src</file>
+    <file>tests</file>
+
+    <!-- 排除的目錄 -->
+    <exclude-pattern>vendor/*</exclude-pattern>
+
+    <!-- 使用 PSR-12 標準 -->
+    <rule ref="PSR12"/>
+
+    <!-- 額外規則 -->
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="120"/>
+            <property name="absoluteLineLimit" value="150"/>
+        </properties>
+    </rule>
+</ruleset>
+
